@@ -232,6 +232,11 @@ label{
     color: white;
     font-family: 'Rubik', sans-serif;
     font-weight: 500;
+    transition: 1s all;
+}
+
+.title:hover{
+    transform: scaleY(1.2);
 }
 
 .t2{
@@ -255,7 +260,7 @@ li:hover{
     width: 280px;
     font-size: 30px;
     border-radius: 4px;
-    background-color: #F600C0;
+    background-color: #78a7f3;
 }
 
 .go{
@@ -284,4 +289,56 @@ li:hover{
 
 #sb3{
     margin-top: 120px;
+}
+
+
+/* .glow {
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+} */
+
+
+/* Lecture basic structure */
+.L{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.Theory {
+    padding: 20px;
+    border-radius: 10px;
+    width: 520px;
+    margin: 20px;
+    border: 1px solid lightgray;   
+    box-shadow: 18px  8px 36px 3px lightgray ;
+}
+.th1{
+    margin-top: 20px;
+    color: #262626;
+    font-size: 30px;
+    font-family: 'Rubik', sans-serif;
+}
+
+.expla{
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+}
+.code{
+    background-color: #262626;
+    color:white;
+    padding: 10px;
+    border-radius: 10px;
 }
