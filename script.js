@@ -16,21 +16,22 @@ function contactvisd() {
 
 function oabout() {
   window.open(
-    "C:Usersanuj1OneDriveDesktopWEWA2ProjectsFinal Projectaboutus.html"
+    "aboutus.html"
   );
 }
 
 function ocontact() {
   window.open(
-    "C:Usersanuj1OneDriveDesktopWEWA2ProjectsFinal Projectcontact.html"
+    "contact.html"
   );
 }
 
 
-var sqls = 0;
+
 
 
 // to open the full tab of SQL
+var sqls = 0;
 function openfull(x , score) {
   var idans = "SQL" + x;
   var h = document.getElementById(idans).style.height;    
@@ -54,3 +55,39 @@ function openfull(x , score) {
 //     document.getElementById(idans).getElementsByClassName("visited").innerText = 1;
 //     document.getElementById("sqlscore").innerText = sqls+"/200"
 // }
+
+// Functions for the course page
+
+function openSQl() {
+  window.open("sql.html");
+}
+
+function openWebTech() {
+  window.open("webtech.html");
+}
+function openJava() {
+  window.open("java.html");
+}
+
+
+// Functions for java Page
+
+var javas = 0;
+function openfull1(x , score) {
+  var idans = "Java" + x;
+  var h = document.getElementById(idans).style.height;    
+  if (document.getElementById(idans).style.height > "86px") {
+    document.getElementById(idans).style.height = "86px";
+
+  } else {
+
+    if(document.getElementById(idans).querySelector(".visited").innerText == 0){
+        javas += score;
+        document.getElementById(idans).querySelector(".visited").innerText = 1;
+        document.getElementById(idans).querySelector(".subheadsco").innerHTML = "Score Boost " + score+"/"+score;
+        document.getElementById("javascore").innerText = javas+"/200"
+    }
+
+    document.getElementById(idans).style.height = "unset";
+  }
+}

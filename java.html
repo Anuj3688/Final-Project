@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,21 +8,21 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="shortcut icon" href="./favicon_io (2)/favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="./font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Rubik:wght@300;400;500&display=swap"
         rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
-    <title>CodeWithAnuj-Java</title>
+    <title>CodeWithAnuj-SQL</title>
 </head>
 
-<body>
+<body >
     <div class="navbar">
         <div class="flexitem" id="flexitem0">
             <img src="./image/logo.png" alt="" style="height: 80px;">
         </div>
         <div class="flexitem" id="flexitem1">
-            <button class="navelement" onmouseover="aboutvis()" onmouseout="aboutvisd()">About US</button>
+            <button class="navelement" onmouseover="aboutvis()" onmouseout="aboutvisd()">About Us</button>
         </div>
         <div class="flexitem" id="flexitem2">
             <button class="navelement" onmouseover="contactvis()" onmouseout="contactvisd()">Contact</button>
@@ -40,69 +41,203 @@
         If you want to contact us then you can reach our social me through our email or our social media handles. <br>
         Email :- <em>anuj.10tiwari2001@gmail.com</em>
         <div class="logos">
-            <button class="social-media" id="Facebook"><i class="fa fa-facebook-official" aria-hidden="true"></i></button>
+            <button class="social-media" id="Facebook"><i class="fa fa-facebook-official"
+                    aria-hidden="true"></i></button>
             <button class="social-media" id="Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></button>
             <button class="social-media" id="Linkdin"><i class="fa fa-linkedin-square" aria-hidden="true"></i></button>
         </div>
     </div>
-    
-    <!-- Lecture -->
+
+    <!-- Theory -->
+    <div class="" id="scoreboard">
+        <div class="scorhead">Your Current Score</div>
+        <div id="javascore">
+            0/200
+        </div>
+    </div>
     <div class="L" id="L0">
-        <div class="Theory">
-            <div class="head">
-                Theory 1.1
+        
+        <div class="Theory" onclick="openfull1(1,5)" id="Java1">
+            <div class="subhead">
+                <i class="fa fa-heartbeat" aria-hidden="true"></i>
+                <span class="subheadsco">Score Boost 0/5</span>
+            </div>
+            <div class="visited">
+                0
             </div>
             <div class="th1">
-                What is Programming Language?
+                History Chart of SQL
             </div>
             <div class="expla">
+
+                It all begin when EF.Codd a famous mathematician presented a mathematical Model in front of the
+                world.
+                <br><br>
+                His theory suggested that the data can be stored.
+                <br><br>
+                Two scientist from IBM (Reymond Boyce and Donald Chamblin) saw this model. They taught that by use
+                of this model we can create a language and SEQUEL(Simmple Query Language) came into existence.
+                <br><br>
+                After that ANSI(American national Standard Institute) got into picture and they standardized it hence
+                SQL(Structure Query language) has been formed in 1986.
 
             </div>
         </div>
-        <div class="Theory">
-            <div class="head">
-                Theory 1.2
+        <div class="Theory" onclick="openfull1(2,5)" id="Java2">
+            <div class="visited">
+                0
+            </div>
+            <div class="subhead">
+                <i class="fa fa-heartbeat" aria-hidden="true"></i>
+                <span class="subheadsco">Score Boost 0/5</span>
             </div>
             <div class="th1">
-
+                What is Data?
             </div>
             <div class="expla">
-
+                Data is a raw fact which gives us the information about the attributes of an entitty.
+            </div>
+        </div>
+        <div class="Theory" onclick="openfull1(3,5)" id="Java3">
+            <div class="visited">
+                0
+            </div>
+            <div class="subhead">
+                <i class="fa fa-heartbeat" aria-hidden="true"></i>
+                <span class="subheadsco">Score Boost 0/5</span>
+            </div>
+            <div class="th1">
+                What is DATABASE?
+            </div>
+            <div class="expla">
+                It is place where we store our data in organised and systematic manner for easy data retrieval(Fetching
+                the Data).
+            </div>
+        </div>
+        <div class="Theory" onclick="openfull1(4,5)" id="Java4">
+            <div class="visited">
+                0
+            </div>
+            <div class="subhead">
+                <i class="fa fa-heartbeat" aria-hidden="true"></i>
+                <span class="subheadsco">Score Boost 0/5</span>
+            </div>
+            <div class="th1">
+                What is DBMS?
+            </div>
+            <div class="expla">
+                -> DataBase Management System Software. <br>
+                -> It is an software which is used to interact with the data present in database for data manipulation
+                using the Query Language.
+            </div>
+        </div>
+        <div class="Theory" onclick="openfull1(5,5)" id="Java5">
+            <div class="visited">
+                0
+            </div>
+            <div class="subhead">
+                <i class="fa fa-heartbeat" aria-hidden="true"></i>
+                <span class="subheadsco">Score Boost 0/5</span>
+            </div>
+            <div class="th1">
+                DISADVANTAGES
+            </div>
+            <div class="expla">
+                1. Data is stored in Flat files (.txt). <br>
+                2. Security & Authorization.<br>
+                3. We can store the Duplicates (Redundancy).<br>
+                4. Identification of redundancy difficult. <br>
+                5. Normalization is not possible.<br>
+            </div>
+        </div>
+        <div class="Theory" onclick="openfull1(6,5)" id="Java6">
+            <div class="visited">
+                0
+            </div>
+            <div class="subhead">
+                <i class="fa fa-heartbeat" aria-hidden="true"></i>
+                <span class="subheadsco">Score Boost 0/5</span>
+            </div>
+            <div class="th1">
+                What is RDBMS?
+            </div>
+            <div class="expla">
+                It is an software which is used to interact with the data present in database for data manipulation
+                using the Query Language and RELATIONAL MODEL.
+            </div>
+        </div>
+        <div class="Theory" onclick="openfull1(7,5)" id="Java7">
+            <div class="visited">
+                0
+            </div>
+            <div class="subhead">
+                <i class="fa fa-heartbeat" aria-hidden="true"></i>
+                <span class="subheadsco">Score Boost 0/5</span>
+            </div>
+            <div class="th1">
+                What are rules of Relational Model ?
+            </div>
+            <div class="expla">
+                1. Data is stored in tabular format <br>
+                2. Data can be stored in multiple tables in a database/ A database can have multiple tables in it. <br>
+                3. Data should be atomic in nature / We should store the data in singular form
+                Each cell should have a single data only. <br>
+                4. The relation between 2 tables is established using Relational moodel.
+            </div>
+        </div>
+        <div class="Theory" onclick="openfull1(8,5)" id="Java8">
+            <div class="visited">
+                0
+            </div>
+            <div class="subhead">
+                <i class="fa fa-heartbeat" aria-hidden="true"></i>
+                <span class="subheadsco">Score Boost 0/5</span>
+            </div>
+            <div class="th1">
+                What is Primary Key?
+            </div>
+            <div class="expla">
+                It is an key attribute(Any Attribute which don't have duplicates & null values in it) which is used to
+                identify the records from the table uniquely.
+            </div>
+        </div>
+        <div class="Theory" onclick="openfull1(9,5)" id="Java9">
+            <div class="visited">
+                0
+            </div>
+            <div class="subhead">
+                <i class="fa fa-heartbeat" aria-hidden="true"></i>
+                <span class="subheadsco">Score Boost 0/5</span>
+            </div>
+            <div class="th1">
+                Characteristics of Primary key
+            </div>
+            <div class="expla">
+                1. It doesn't accept <br>
+                2. It doesn't accept null values. <br>
+                3. it is combination of unique and not null constraint. <br>
+                4. we can have only 1 primary key in a table. <br>
+                5. It is not mandatory but it is recommended.
+            </div>
+        </div>
+        <div class="Theory" onclick="openfull1(10,5)" id="Java10">
+            <div class="visited">
+                0
+            </div>
+            <div class="subhead">
+                <i class="fa fa-heartbeat" aria-hidden="true"></i>
+                <span class="subheadsco">Score Boost 0/5</span>
+            </div>
+            <div class="th1">
+                What is Foreign Key?
+            </div>
+            <div class="expla">
+                It is attribute which is used to establish the relationship between 2 tables.
             </div>
         </div>
     </div>
 
-
-    <div class="L" id="L0">
-        <div class="Theory">
-            <div class="head">
-                Theory 1.3
-            </div>
-            <div class="th1">
-                What is Programming Language?
-            </div>
-            <div class="expla">
-                As we know, to communicate with a person, we need a specific language, similarly to communicate with
-                computers, programmers also need a language is called Programming language.
-            </div>
-        </div>
-        <div class="Theory">
-            <div class="head">
-                Code 1.2
-            </div>
-            <div class="th1">
-
-            </div>
-            <div class="code">
-                class HelloWorld{
-                    public static void main(String[] args){
-                        System.out.println("Hellow World");
-                    }
-                }
-            </div>
-        </div>
-    </div>
-    <!-- Footer -->
+    <!-- Footer Element -->
     <div class="foot">
         <div class="footitem" id="foot1">
             <i class="fa fa-facebook-official" aria-hidden="true"></i>
@@ -115,6 +250,7 @@
         </div>
     </div>
 
+    <script src="./script.js"></script>
 </body>
 
 </html>

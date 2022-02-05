@@ -13,15 +13,16 @@
     <title>Subjects</title>
 </head>
 <body>
+    <!-- Navbar -->
     <div class="navbar">
         <div class="flexitem" id="flexitem0">
             <img src="./image/logo.png" alt="" style="height: 80px;">
         </div>
         <div class="flexitem" id="flexitem1">
-            <button class="navelement" onmouseover="aboutvis()" onmouseout="aboutvisd()">About Us</button>
+            <button class="navelement"  onmouseover="aboutvis()" onmouseout="aboutvisd()" onclick="oabout()">About Us</button>
         </div>
         <div class="flexitem" id="flexitem2">
-            <button class="navelement" onmouseover="contactvis()" onmouseout="contactvisd()">Contact</button>
+            <button class="navelement"  onmouseover="contactvis()" onmouseout="contactvisd()" onclick="ocontact()">Contact</button>
         </div>
     </div>
     <!-- about us section on hover-->
@@ -77,7 +78,7 @@
                 </ol>
             </div>
             <div class="goto">
-                <button class="go" id="sb1" >
+                <button class="go" id="sb1" onclick="openJava()">
                     Start Learning Java
                 </button>
             </div>
@@ -103,7 +104,7 @@
                     <li>JavaScript</li>
                 </ul>
             </div>
-            <button class="go" id="sb2">
+            <button class="go" id="sb2" onclick="openWebTech()">
                 Start Learning Webtech
             </button>
         </div>
@@ -123,7 +124,7 @@
                     <li>ER Diagram</li>
                 </ol>
             </div>
-            <button class="go" id="sb3">
+            <button class="go" id="sb3" onclick="openSQl()">
                 Start Learning SQL
             </button>
         </div>
@@ -140,5 +141,8 @@
             <i class="fa fa-instagram" aria-hidden="true"></i>
         </div>
     </div>
+
+
+    <script src="./script.js"></script>
 </body>
 </html>
