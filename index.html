@@ -27,6 +27,9 @@
         <div class="flexitem" id="flexitem2">
             <button class="navelement"  onmouseover="contactvis()" onmouseout="contactvisd()" onclick="ocontact()">Contact</button>
         </div>
+        <div class="flexitem" id="flexitem4" onclick="openlog()">
+            Login Form
+        </div>
     </div>
     <!-- about us section on hover-->
     <div class="aboutus" id="abfunc">
@@ -45,9 +48,14 @@
     </div>
     
     <div class="box">
-
+        <div class="image">
+            <img src="./image/19362653.jpg" alt="" height="500px" width="700px">
+        </div>
         <!-- login form -->
-        <div class="login">
+        <div class="login" id="loginform">
+            <div class="cross">
+                <button id="crossbutton" onclick="closelog()"><i class="fa fa-times" aria-hidden="true"></i></button>
+            </div>
             <div class="head">
                 Login
             </div>
@@ -61,7 +69,7 @@
                     <input type="password" name="" id="" placeholder="sfaSDUF!@$#" value="FakePSW">
                 </div>
                 <div class="formcontent" id="formcontent3">
-                    <input type="submit" value="Submit">
+                    <input type="submit" value="Submit" onclick="openSubject()">
                 </div>
             </form>
             <div class="footer">
@@ -71,7 +79,7 @@
             </div>
         </div>
         <!-- Animation Content -->
-        <div class="Content">
+        <div class="Content" id="anicont">
             <div class="head1">
                 .
             </div>

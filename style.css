@@ -1,353 +1,392 @@
-*{
-    padding: 0%;
-    margin: 0%;
+* {
+  padding: 0%;
+  margin: 0%;
 }
 
-.navbar{
-    background: rgb(58,134,255);
-background: linear-gradient(90deg, rgba(58,134,255,1) 1%, rgba(246,0,192,1) 100%);
-    height: 70px;
-    display: flex;
-    align-items: center;
-    font-family: 'Bree Serif', serif;
-    
+.navbar {
+  background: rgb(58, 134, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(58, 134, 255, 1) 1%,
+    rgba(246, 0, 192, 1) 100%
+  );
+  height: 70px;
+  display: flex;
+  align-items: center;
+  font-family: "Bree Serif", serif;
 }
-a{
-    text-decoration: none;
-}
-
-#flexitem0{
-    margin-left: 20px;
-    width: 230px;
-    margin-top: 10px;
-}
-.flexitem{
-    width: 130px;
-    font-size: 25px;
-    text-align: center;
-    color: white;
+a {
+  text-decoration: none;
 }
 
-#flexitem3{
-    position: absolute;
-    right: 10px;
-    font-size: 40px;
+#flexitem0 {
+  margin-left: 20px;
+  width: 230px;
+  margin-top: 10px;
+}
+.flexitem {
+  width: 130px;
+  font-size: 25px;
+  text-align: center;
+  color: white;
 }
 
-.navelement{
-    width: 100%;
-    height: 70px;
-    font-family: 'Bree Serif', serif;
-    background-color: transparent;
-    border: none;
-    color: white;
-    font-size: 25px;
+#flexitem3 {
+  position: absolute;
+  right: 10px;
+  font-size: 40px;
+  transition: 1s all;
 }
-.navelement:hover{
-    font-size: 31px;
-    background-color: black;
+#flexitem4:hover {
+  transform: scale(1.2);
+}
+.navelement {
+  width: 100%;
+  height: 70px;
+  font-family: "Bree Serif", serif;
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 25px;
+}
+.navelement:hover {
+  font-size: 31px;
+  background-color: black;
 }
 /* About us section */
-.aboutus{
-    font-family: 'Rubik', sans-serif;
-    margin-top: 1px;
-    background: rgb(58,134,255);
-background: linear-gradient(90deg, rgba(58,134,255,1) 1%, rgba(246,0,192,1) 100%);
-    height: 50px;
-    text-align: center;
-    padding: 10px 0px 10px 150px;
-    color: white;
-    font-size: 30px;
-    display: none;
+.aboutus {
+  font-family: "Rubik", sans-serif;
+  margin-top: 1px;
+  background: rgb(58, 134, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(58, 134, 255, 1) 1%,
+    rgba(246, 0, 192, 1) 100%
+  );
+  height: 50px;
+  text-align: center;
+  padding: 10px 0px 10px 150px;
+  color: white;
+  font-size: 30px;
+  display: none;
 }
 
 /* Contact us */
-.contact{
-    font-family: 'Rubik', sans-serif;
-    background: rgb(58,134,255);
-background: linear-gradient(90deg, rgba(58,134,255,1) 1%, rgba(246,0,192,1) 100%);
-    height: 110px;
-    padding: 20px;
-    text-align: center;
-    color: white;
-    font-size: 20px;
-    display: none;
+.contact {
+  font-family: "Rubik", sans-serif;
+  background: rgb(58, 134, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(58, 134, 255, 1) 1%,
+    rgba(246, 0, 192, 1) 100%
+  );
+  height: 110px;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  display: none;
 }
-.logos{
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-    
+.logos {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
 }
-.social-media{
-    margin-left: 40px;
-    margin-right: 40px;
-    width: 50px;
-    height: 50px;
-    border: none;
-    font-size: 30px;
-    background-color: white;
-    border-radius: 50%;
-    transition: all 1s;
+.social-media {
+  margin-left: 40px;
+  margin-right: 40px;
+  width: 50px;
+  height: 50px;
+  border: none;
+  font-size: 30px;
+  background-color: white;
+  border-radius: 50%;
+  transition: all 1s;
+}
+.social-media:hover {
+  transform: scale(1.4);
+}
 
+#Facebook {
+  color: #4267b2;
 }
-.social-media:hover{
-    transform: scale(1.4);
+#Instagram {
+  color: #cd486b;
 }
-
-#Facebook{
-    color: #4267B2;
-}
-#Instagram{
-    color:  #cd486b;
-}
-#Linkdin{
-    color:  #0072b1;
+#Linkdin {
+  color: #0072b1;
 }
 /* Login form work */
-.login{
-    border-radius: 20px;
-    border: 1px solid lightgray;
-    padding: 20px;
-    margin: 30px 20px 20px 80px;
-    height: 400px;
-    width: 300px;
-    padding-left: 40px;
-    padding-right: 40px;
-    box-shadow: 18px  8px 36px 3px lightgray;
+
+#crossbutton {
+  border: none;
+  font-size: 30px;
+  float: right;
+  background-color: transparent;
+  color: lightgrey;
+}
+#crossbutton:hover {
+  color: #262626;
+}
+.login {
+    display: none;
+  border-radius: 20px;
+  border: 1px solid lightgray;
+  padding: 20px;
+  margin: 30px 20px 20px 80px;
+  height: 400px;
+  width: 300px;
+  padding-left: 40px;
+  padding-right: 40px;
+  box-shadow: 18px 8px 36px 3px lightgray;
 }
 
-#formcontent1 , #formcontent2 , #formcontent3{
-    border-bottom: 1px solid #3A86FF;
-}
-input{
-    border: none;
-    display: inline-block;
-    transition: all 2s;
-    width: 60%;
-    height: 30px;
-    border-radius: 6px;
-}
-
-input[type=submit]{
-    width: 100%;
-    height: 40px;
-    background-color: #3A86FF;
-    color: white;
-    border-radius: 30px;
-    font-size: 20px;
+.signup{
+  border-radius: 20px;
+  border: 1px solid lightgray;
+  padding: 20px;
+  margin: 30px 20px 20px 80px;
+  height: 400px;
+  width: 300px;
+  padding-left: 40px;
+  padding-right: 40px;
+  box-shadow: 18px 8px 36px 3px lightgray;
 }
 
-input[type=submit]:hover{
-    border: none;
-    width: 100%;
-    color: white;
-    background-color: #F600C0;
+#formcontent1,
+#formcontent2,
+#formcontent3 {
+  border-bottom: 1px solid #3a86ff;
 }
-input:hover{
-    width: 100%;
-    border: none;
-    border: 1px double #F600C0;
-}
-
-.head{
-    font-size: 40px;
-    font-family: 'Rubik', sans-serif;
+input {
+  border: none;
+  display: inline-block;
+  transition: all 2s;
+  width: 60%;
+  height: 30px;
+  border-radius: 6px;
 }
 
-.formcontent{
-    margin-top:20px;
-}
-label{
-    font-size: 20px;
-    font-family: 'Rubik', sans-serif;
-}
-
-.box{
-    display: flex;
+input[type="submit"] {
+  width: 100%;
+  height: 40px;
+  background-color: #3a86ff;
+  color: white;
+  border-radius: 30px;
+  font-size: 20px;
 }
 
-
-.footer{
-    text-align: center;
-    margin-top: 30px;
-    font-size: 20px;
-    font-family: 'Rubik', sans-serif;
-    transition: all 1s;
+input[type="submit"]:hover {
+  border: none;
+  width: 100%;
+  color: white;
+  background-color: #f600c0;
 }
-#signup{
-    font-size: 20px;
-    transition: all 1s; 
-}
-#signup:hover{
-    font-size: 30px;
-    color: #3A86FF;
+input:hover {
+  width: 100%;
+  border: none;
+  border: 1px double #f600c0;
 }
 
+.head {
+  font-size: 40px;
+  font-family: "Rubik", sans-serif;
+}
+
+.formcontent {
+  margin-top: 20px;
+}
+label {
+  font-size: 20px;
+  font-family: "Rubik", sans-serif;
+}
+
+.box {
+  display: flex;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 20px;
+  font-family: "Rubik", sans-serif;
+  transition: all 1s;
+}
+#signup {
+  font-size: 20px;
+  transition: all 1s;
+}
+#signup:hover {
+  font-size: 30px;
+  color: #3a86ff;
+}
 
 /* Animation Content work */
-.Content{
-    border-radius: 20px;
-    padding: 20px;
-    margin: 30px 20px 20px 40px;
-    height: 400px;
-    width: 400px; 
+.Content {
+  border-radius: 20px;
+  padding: 20px;
+  margin: 30px 20px 20px 40px;
+  height: 400px;
+  width: 400px;
 }
-.head1::before{
-    content: "";
-    width: 100%;
-    height: 100%;
-    font-size: 50px;
-    font-family: 'Rubik', sans-serif;
-    animation: changing infinite 12s;
+.head1::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  font-size: 50px;
+  font-family: "Rubik", sans-serif;
+  animation: changing infinite 12s;
 }
 
 @keyframes changing {
-    0%{
-        content: "Why should we learn Coding from you?";
-    }
-    50%{
-        content: "What are you going to teach?";
-    }
-    100%{
-        content: "Will it be fun?";
-    }
+  0% {
+    content: "Why should we learn Coding from you?";
+  }
+  50% {
+    content: "What are you going to teach?";
+  }
+  100% {
+    content: "Will it be fun?";
+  }
 }
-.dis::before{
-    content: "";
-    width: 100%;
-    height: 100%;
-    font-size: 35px;
-    font-family: 'Rubik', sans-serif;
-    animation: changingd infinite 12s;
+.dis::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  font-size: 35px;
+  font-family: "Rubik", sans-serif;
+  animation: changingd infinite 12s;
 }
 @keyframes changingd {
-    0%{
-        content: "Because I have learned coding by my own and made lot of mistakes. I am sure that I can make your coding experience a lot fun and easier";
-    }
-    50%{
-        content: "I will be teaching you Java, Webtech and SQL and much more";
-    }
-    100%{
-        content: "Once you start learning and applying you will have a wide range of fun while solving creative problems";
-    }
+  0% {
+    content: "Because I have learned coding by my own and made lot of mistakes. I am sure that I can make your coding experience a lot fun and easier";
+  }
+  50% {
+    content: "I will be teaching you Java, Webtech and SQL and much more";
+  }
+  100% {
+    content: "Once you start learning and applying you will have a wide range of fun while solving creative problems";
+  }
 }
-
 
 /* Foot content Design */
 
-.foot{
-    background: rgb(58,134,255);
-    background: linear-gradient(90deg, rgba(58,134,255,1) 1%, rgba(246,0,192,1) 100%);
-        height: 100px;
-        margin-top: 50px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-family: 'Bree Serif', serif;
+.foot {
+  background: rgb(58, 134, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(58, 134, 255, 1) 1%,
+    rgba(246, 0, 192, 1) 100%
+  );
+  height: 100px;
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Bree Serif", serif;
 }
 
-.footitem{
-    width: 100px;
-    font-size: 40px;
-    color: white;
-    transition: all 1s;
+.footitem {
+  width: 100px;
+  font-size: 40px;
+  color: white;
+  transition: all 1s;
 }
 
-.footitem:hover{
-    font-size: 60px;
-    transform: rotate(-20deg);
+.footitem:hover {
+  font-size: 60px;
+  transform: rotate(-20deg);
 }
-
 
 /* Subject body */
 
-.subject{
-    display: flex;
-    height: 600px;
-    width: 100%;
-    flex-wrap: wrap;
-    /* align-items: center; */
-    justify-content: center;
-    /* align-content: space-between; */
+.subject {
+  display: flex;
+  height: 600px;
+  width: 100%;
+  flex-wrap: wrap;
+  /* align-items: center; */
+  justify-content: center;
+  /* align-content: space-between; */
 }
-.sub{
-    background: rgb(58,134,255);
-    padding: 20px;
-    width: 320px;
-    margin: 30px;
-    border-radius: 20px;
-    padding: 20px;
-    /* align-items: stretch; */
-    display: flex;
-    flex-direction: column;
-    box-shadow: 18px  8px 36px 3px lightgray ;
+.sub {
+  background-color: #0093e9;
+  background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+
+  padding: 20px;
+  width: 320px;
+  margin: 30px;
+  border-radius: 20px;
+  padding: 20px;
+  /* align-items: stretch; */
+  display: flex;
+  flex-direction: column;
+  box-shadow: 18px 8px 36px 3px lightgray;
 }
 
-.title{
-    font-size: 40px;
-    color: white;
-    font-family: 'Rubik', sans-serif;
-    font-weight: 500;
-    transition: 1s all;
+.title {
+  font-size: 40px;
+  color: white;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  transition: 1s all;
 }
 
-.title:hover{
-    transform: scaleY(1.2);
+.title:hover {
+  transform: scaleY(1.2);
 }
 
-.t2{
-    margin-top: 20px;
-    font-size: 30px;
-    color: white;
-    font-family: 'Rubik', sans-serif;
+.t2 {
+  margin-top: 20px;
+  font-size: 30px;
+  color: white;
+  font-family: "Rubik", sans-serif;
 }
-.dis0{
-    margin-top: 20px;
-    font-size: 25px;
-    color: white;
-    font-family: 'Rubik', sans-serif;
-    margin-left: 20px;
+.dis0 {
+  margin-top: 20px;
+  font-size: 25px;
+  color: white;
+  font-family: "Rubik", sans-serif;
+  margin-left: 20px;
 }
-li{
-    transition: width 0.5s;
-    width: 230px;
+li {
+  transition: width 0.5s;
+  width: 230px;
 }
-li:hover{
-    width: 280px;
-    font-size: 30px;
-    border-radius: 4px;
-    background-color: #78a7f3;
-}
-
-.go{
-    position: relative;
-    width: 100%;
-    height: 60px;
-    font-size: 20px;
-    font-weight: 600;
-    border-radius: 30px;
-    border: none;
-    background-color: white;
-    color: #262626;
-}
-.go:hover{
-    background-color: #ff66de;
-    color: white;
+li:hover {
+  width: 280px;
+  font-size: 30px;
+  border-radius: 4px;
+  background-color: #78a7f3;
 }
 
-#sb1{
-    margin-top: 40px;
+.go {
+  position: relative;
+  width: 100%;
+  height: 60px;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 30px;
+  border: none;
+  background-color: white;
+  color: #262626;
+}
+.go:hover {
+  background-color: #ff66de;
+  color: white;
 }
 
-#sb2{
-    margin-top: 40px;
+#sb1 {
+  margin-top: 40px;
 }
 
-#sb3{
-    margin-top: 120px;
+#sb2 {
+  margin-top: 40px;
 }
 
+#sb3 {
+  margin-top: 120px;
+}
 
 /* .glow {
   color: #fff;
@@ -366,88 +405,75 @@ li:hover{
   }
 } */
 
-
+.bodywork{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 20px;
+  margin-right: 20px;
+}
 /* Score board */
-#scoreboard{
-    color: white;
-    background-color: #3A86FF;
-    position: fixed;
-    right: 20px;
-    bottom: 20px;
-    padding: 20px;
-    border-radius: 20px;
-    width: 120px;
-    border: 1px solid lightgray;   
-    box-shadow: 18px  0px 36px 3px lightgray ;
-    height: 80px;
-    text-align: center;
-    font-size: 20px;
-    font-family: 'Rubik', sans-serif;
-    animation-name: moving;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
+#scoreboard {
+  position: sticky;
+  color: white;
+  background-color: #0093e9;
+  padding: 20px;
+  border-radius: 20px;
+  width: 220px;
+  border: 1px solid lightgray;
+  /* box-shadow: 18px 0px 36px 3px lightgray; */
+  height: 220px;
+  text-align: center;
+  font-size: 20px;
+  font-family: "Rubik", sans-serif;
 }
-@keyframes moving {
-    0%{
-        bottom: 20px;
-        box-shadow: 18px  0px 36px 3px lightgray ;
-    }
-    50%{
-        bottom: 50px;
-        box-shadow: 18px  20px 36px 3px lightgray ;
-    }
-    100%{
-        bottom: 20px;
-        box-shadow: 18px  0px 36px 3px lightgray ;
-    }
-}
-#sqlscore{
-    font-weight: 900;
+
+#sqlscore  ,#sqlq{
+  font-weight: 900;
 }
 /* Lecture basic structure */
-.L{
-    display: flex;
-    flex-wrap: wrap;
-    width: 1020px;
-    
+.L {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1020px;
 }
-.visited{
-    display: none;
+.visited {
+  display: none;
 }
 .Theory {
-    padding: 20px;
-    /* border-radius: 10px; */
-    width: 820px;
-    margin: 5px 20px 5px 20px;
-    border: 1px solid lightgray;   
-    box-shadow: 18px 4px 22px -6px lightgrey;
-    height: 86px;
-    overflow: hidden;
-    transition: 2s all;
+  padding: 20px;
+  /* border-radius: 10px; */
+  width: 820px;
+  margin: 5px 20px 5px 20px;
+  border: 1px solid lightgray;
+  box-shadow: 18px 4px 22px -6px lightgrey;
+  height: 86px;
+  overflow: hidden;
+  transition: 2s all;
 }
 
-.Theory:hover{
-    width: 1020px;
+.Theory:hover {
+  width: 1020px;
 }
-.subhead{
-    font-size: 30px;
-    float: right;
-    font-family: 'Rubik', sans-serif;
+.subhead {
+  font-size: 30px;
+  float: right;
+  font-family: "Rubik", sans-serif;
 }
-.th1{
-    margin-top: 20px;
-    color: #0072b1;
-    font-size: 30px;
-    font-family: 'Rubik', sans-serif;
+.th1 {
+  margin-top: 20px;
+  color: #0072b1;
+  font-size: 30px;
+  font-family: "Rubik", sans-serif;
 }
 
-.expla{
-    font-family: 'Rubik', sans-serif;
-    font-size: 20px;
+.expla {
+  font-family: "Rubik", sans-serif;
+  font-size: 20px;
 }
-.code{
-    background-color: #262626;
-    color:white;
-    padding: 10px;
-    border-radius: 10px;
+.code {
+  background-color: #262626;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
 }

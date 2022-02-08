@@ -26,12 +26,16 @@ function ocontact() {
   );
 }
 
+// Function for Login
 
-
+function openSubject() {
+  window.open("Course.html");
+}
 
 
 // to open the full tab of SQL
 var sqls = 0;
+var sq = 0;
 function openfull(x , score) {
   var idans = "SQL" + x;
   var h = document.getElementById(idans).style.height;    
@@ -42,9 +46,11 @@ function openfull(x , score) {
 
     if(document.getElementById(idans).querySelector(".visited").innerText == 0){
         sqls += score;
+        q++;
         document.getElementById(idans).querySelector(".visited").innerText = 1;
         document.getElementById(idans).querySelector(".subheadsco").innerHTML = "Score Boost " + score+"/"+score;
-        document.getElementById("sqlscore").innerText = sqls+"/200"
+        document.getElementById("sqlscore").innerText = sqls+"/200";
+        document.getElementById("sqlq").innerText = sq +"/10";
     }
 
     document.getElementById(idans).style.height = "unset";
@@ -73,6 +79,7 @@ function openJava() {
 // Functions for java Page
 
 var javas = 0;
+var jq = 0;
 function openfull1(x , score) {
   var idans = "Java" + x;
   var h = document.getElementById(idans).style.height;    
@@ -83,11 +90,25 @@ function openfull1(x , score) {
 
     if(document.getElementById(idans).querySelector(".visited").innerText == 0){
         javas += score;
+        jq++;
         document.getElementById(idans).querySelector(".visited").innerText = 1;
         document.getElementById(idans).querySelector(".subheadsco").innerHTML = "Score Boost " + score+"/"+score;
-        document.getElementById("javascore").innerText = javas+"/200"
+        document.getElementById("javascore").innerText = javas+"/200";
+        document.getElementById("javaq").innerText = jq +"/10";
     }
 
     document.getElementById(idans).style.height = "unset";
   }
+}
+
+
+//Close function
+function closelog() {
+  document.getElementById("loginform").style = 'display:none';
+  document.getElementById("anicont").style = 'display:block';
+}
+
+function openlog(){
+  document.getElementById("loginform").style = 'display:block';
+  document.getElementById("anicont").style = 'display:none';
 }
