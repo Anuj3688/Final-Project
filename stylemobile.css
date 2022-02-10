@@ -1,0 +1,248 @@
+@media (max-width: 480px) {
+  * {
+    margin: 0%;
+    padding: 0%;
+  }
+  .navbar {
+    color: white;
+    width: 100%;
+    background: rgb(58, 134, 255);
+
+    height: 50px;
+    display: flex;
+    align-items: center;
+  }
+
+  .flexitem {
+    text-align: center;
+    width: 80px;
+  }
+
+  #flexitem0 {
+    width: 120px;
+    font-weight: 700;
+  }
+  input[type="button"] {
+    color: white;
+    font-weight: 500;
+    height: 50px;
+    width: 80px;
+    border: none;
+    background-color: transparent;
+  }
+
+  input[type="button"]:hover {
+    background-color: white;
+    color: black;
+  }
+
+  #flexitem4 {
+    background-color: white;
+    border-radius: 20px;
+    font-size: 15px;
+    width: 100px;
+    color: #3a86ff;
+    text-align: center;
+  }
+
+  img {
+    max-height: 280px;
+    max-width: 380px;
+  }
+
+  /* about us details */
+  .aboutus {
+    background: rgb(58, 134, 255);
+    height: 20px;
+    text-align: center;
+    color: white;
+    font-size: 12px;
+    display: none;
+  }
+
+  /* Contact us */
+  .contact {
+    font-family: "Rubik", sans-serif;
+    background: rgb(58, 134, 255);
+    height: 35px;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-size: 10px;
+    display: none;
+  }
+
+  /* Login setting */
+  #crossbutton {
+    border: none;
+    font-size: 30px;
+    float: right;
+    background-color: transparent;
+    color: lightgrey;
+  }
+  #crossbutton:hover {
+    color: #262626;
+  }
+  .login {
+    display: none;
+    border-radius: 20px;
+    border: 1px solid lightgray;
+    padding: 20px;
+    margin: 30px 20px 20px 80px;
+    height: 200px;
+    width: 200px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-shadow: 18px 8px 36px 3px lightgray;
+  }
+
+  .signup {
+    border-radius: 20px;
+    border: 1px solid lightgray;
+    padding: 20px;
+    margin: 30px 20px 20px 80px;
+    height: 400px;
+    width: 300px;
+    padding-left: 40px;
+    padding-right: 40px;
+    box-shadow: 18px 8px 36px 3px lightgray;
+  }
+
+  .formcontent {
+    margin-top: 12px;
+  }
+  label {
+    font-size: 10px;
+    font-family: "Rubik", sans-serif;
+  }
+  .head {
+    font-size: 20px;
+    font-family: "Rubik", sans-serif;
+  }
+  input {
+    border: none;
+    display: inline-block;
+    transition: all 2s;
+    width: 70%;
+    height: 20px;
+    border-radius: 6px;
+  }
+
+  input[type="submit"] {
+    width: 50px;
+    height: 20px;
+    background-color: #3a86ff;
+    color: white;
+    border-radius: 30px;
+    font-size: 10px;
+  }
+
+  input[type="submit"]:hover {
+    border: none;
+    width: 100%;
+    color: white;
+    background-color: #f600c0;
+  }
+  input:hover {
+    width: 100%;
+    border: none;
+    border: 0.5px double #f600c0;
+  }
+  .box {
+    display: flex;
+    flex-wrap: wrap-reverse;
+  }
+
+  .footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 10px;
+    font-family: "Rubik", sans-serif;
+    transition: all 1s;
+  }
+  #signup {
+    text-decoration: none;
+    font-size: 20px;
+    transition: all 1s;
+  }
+  #signup:hover {
+    font-size: 20px;
+    color: #3a86ff;
+  }
+
+  #formcontent1,
+  #formcontent2 {
+    border-bottom: 0.5px solid #3a86ff;
+  }
+
+  /* Animation Content */
+  .Content {
+    border-radius: 10px;
+    padding: 10px;
+    margin: 30px 20px 20px 40px;
+    height: 150px;
+    width: 300px;
+  }
+  .head1::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    font-size: 30px;
+    font-family: "Rubik", sans-serif;
+    animation: changing infinite 10s;
+  }
+
+  @keyframes changing {
+    0% {
+      content: "Why should we learn Coding from you?";
+    }
+    50% {
+      content: "What are you going to teach?";
+    }
+    100% {
+      content: "Will it be fun?";
+    }
+  }
+  .dis::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    font-family: "Rubik", sans-serif;
+    animation: changingd infinite 12s;
+  }
+  @keyframes changingd {
+    0% {
+      content: "Because I have learned coding by my own and made lot of mistakes. I am sure that I can make your coding experience a lot fun and easier";
+    }
+    50% {
+      content: "I will be teaching you Java, Webtech and SQL and much more";
+    }
+    100% {
+      content: "Once you start learning and applying you will have a wide range of fun while solving creative problems";
+    }
+  }
+
+  /* Foot content Design */
+
+  .foot {
+    background: rgb(58, 134, 255);
+    background: linear-gradient(
+      90deg,
+      rgba(58, 134, 255, 1) 1%,
+      rgba(246, 0, 192, 1) 100%
+    );
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Bree Serif", serif;
+  }
+
+  .footitem {
+    width: 50px;
+    font-size: 20px;
+    color: white;
+    transition: all 1s;
+  }
+}
