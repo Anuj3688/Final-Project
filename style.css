@@ -4,6 +4,10 @@
     margin: 0%;
   }
 
+  img {
+    height: 500px;
+    width: 700px;
+  }
   .navbar {
     width: 100%;
     background: rgb(58, 134, 255);
@@ -55,6 +59,16 @@
   .navelement:hover {
     font-size: 31px;
     background-color: black;
+  }
+
+  input[type=button]{
+    color: white;
+    font-weight: 500;
+    height: 50px;
+    width: 100px;
+    border: none;
+    font-size: 25px;
+    background-color: transparent;
   }
   /* About us section */
   .aboutus {
@@ -411,8 +425,9 @@
   .bodywork {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    /* justify-content: center; */
     margin-top: 20px;
+  
     margin-right: 20px;
   }
   /* Score board */
@@ -439,7 +454,7 @@
   .L {
     display: flex;
     flex-wrap: wrap;
-    width: 1020px;
+    width: 1220px;
   }
   .visited {
     display: none;
@@ -451,17 +466,17 @@
     margin: 5px 20px 5px 20px;
     border: 1px solid lightgray;
     box-shadow: 18px 4px 22px -6px lightgrey;
-    height: 86px;
+    height: 70px;
     overflow: hidden;
     transition: 2s all;
   }
 
   .Theory:hover {
-    width: 1020px;
+    width: 920px;
   }
   .subhead {
     font-size: 30px;
-    float: right;
+      
     font-family: "Rubik", sans-serif;
   }
   .th1 {

@@ -34,19 +34,20 @@ function openSubject() {
 
 
 // to open the full tab of SQL
+
 var sqls = 0;
 var sq = 0;
 function openfull(x , score) {
   var idans = "SQL" + x;
   var h = document.getElementById(idans).style.height;    
-  if (document.getElementById(idans).style.height > "86px") {
-    document.getElementById(idans).style.height = "86px";
+  if (document.getElementById(idans).style.height > "70px") {
+    document.getElementById(idans).style.height = "70px";
 
   } else {
 
     if(document.getElementById(idans).querySelector(".visited").innerText == 0){
         sqls += score;
-        q++;
+        sq++;
         document.getElementById(idans).querySelector(".visited").innerText = 1;
         document.getElementById(idans).querySelector(".subheadsco").innerHTML = "Score Boost " + score+"/"+score;
         document.getElementById("sqlscore").innerText = sqls+"/200";
@@ -83,8 +84,8 @@ var jq = 0;
 function openfull1(x , score) {
   var idans = "Java" + x;
   var h = document.getElementById(idans).style.height;    
-  if (document.getElementById(idans).style.height > "86px") {
-    document.getElementById(idans).style.height = "86px";
+  if (document.getElementById(idans).style.height > "70px") {
+    document.getElementById(idans).style.height = "70px";
 
   } else {
 
