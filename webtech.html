@@ -6,28 +6,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="./style.css">
     <link rel="shortcut icon" href="./favicon_io (2)/favicon.ico" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Rubik:wght@300;400;500&display=swap"
-        rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
-    <title>CodeWithAnuj-Java</title>
+    <link rel="stylesheet" href="./stylemobile.css">
+    <link rel="stylesheet" href="./tabletstyle.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeWithAnuj-Webtech</title>
 </head>
 
 <body>
     <div class="navbar">
         <div class="flexitem" id="flexitem0">
-            <img src="./image/logo.png" alt="" style="height: 80px;">
+            CodeWithAnuj
         </div>
         <div class="flexitem" id="flexitem1">
-            <button class="navelement" onmouseover="aboutvis()" onmouseout="aboutvisd()">About US</button>
+            <input type="button" value="About us" onmouseover="aboutvis()" onmouseout="aboutvisd()">
         </div>
         <div class="flexitem" id="flexitem2">
-            <button class="navelement" onmouseover="contactvis()" onmouseout="contactvisd()">Contact</button>
-        </div>
-        <div class="flexitem" id="flexitem3">
-            Java
+            <input type="button" value="Contact" onmouseover="contactvis()" onmouseout="contactvisd()">
         </div>
     </div>
     <!-- about us section on hover-->
@@ -40,69 +35,248 @@
         If you want to contact us then you can reach our social me through our email or our social media handles. <br>
         Email :- <em>anuj.10tiwari2001@gmail.com</em>
         <div class="logos">
-            <button class="social-media" id="Facebook"><i class="fa fa-facebook-official" aria-hidden="true"></i></button>
+            <button class="social-media" id="Facebook"><i class="fa fa-facebook-official"
+                    aria-hidden="true"></i></button>
             <button class="social-media" id="Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></button>
             <button class="social-media" id="Linkdin"><i class="fa fa-linkedin-square" aria-hidden="true"></i></button>
         </div>
     </div>
-    
-    <!-- Lecture -->
-    <div class="L" id="L0">
-        <div class="Theory">
-            <div class="head">
-                Theory 1.1
-            </div>
-            <div class="th1">
-                What is Programming Language?
-            </div>
-            <div class="expla">
 
+    <!-- Theory -->
+    <div class="bodywork">
+        <div class="L" id="L0">
+
+            <div class="Theory" onclick="openfull1(1,5)" id="Java1">
+                <div class="subhead">
+                    <i class="fa fa-heartbeat" aria-hidden="true"></i>
+                    <span class="subheadsco">Score Boost 0/5</span>
+                </div>
+                <div class="visited">
+                    0
+                </div>
+                <div class="th1">
+                    What is JDK?
+                </div>
+                <div class="expla">
+
+                    The full form of JDK is Java development kit.
+                    <br>
+                    It is a software which provides environment to compile and execute java program.
+
+                </div>
+            </div>
+            <div class="Theory" onclick="openfull1(2,5)" id="Java2">
+                <div class="visited">
+                    0
+                </div>
+                <div class="subhead">
+                    <i class="fa fa-heartbeat" aria-hidden="true"></i>
+                    <span class="subheadsco">Score Boost 0/5</span>
+                </div>
+                <div class="th1">
+                    What is JRE?
+                </div>
+                <div class="expla">
+                    The full form is Java run time environment.
+                    <br>
+                    It is a software which provides libraries for executing a java program.
+                </div>
+            </div>
+            <div class="Theory" onclick="openfull1(3,5)" id="Java3">
+                <div class="visited">
+                    0
+                </div>
+                <div class="subhead">
+                    <i class="fa fa-heartbeat" aria-hidden="true"></i>
+                    <span class="subheadsco">Score Boost 0/5</span>
+                </div>
+                <div class="th1">
+                    What is JVM?
+                </div>
+                <div class="expla">
+                    The full form Java virtual Machine.
+                    <br>
+                    It is a virtual machine but behave like physical machine.
+                </div>
+            </div>
+            <div class="Theory" onclick="openfull1(4,5)" id="Java4">
+                <div class="visited">
+                    0
+                </div>
+                <div class="subhead">
+                    <i class="fa fa-heartbeat" aria-hidden="true"></i>
+                    <span class="subheadsco">Score Boost 0/5</span>
+                </div>
+                <div class="th1">
+                    Advantage of Java:
+                </div>
+                <div class="expla">
+                    Simple <br>
+                    Robust <br>
+                    Platform independent <br>
+                    Portable <br>
+                    Multithreading <br>
+                    Secure <br>
+
+                </div>
+            </div>
+            <div class="Theory" onclick="openfull1(5,5)" id="Java5">
+                <div class="visited">
+                    0
+                </div>
+                <div class="subhead">
+                    <i class="fa fa-heartbeat" aria-hidden="true"></i>
+                    <span class="subheadsco">Score Boost 0/5</span>
+                </div>
+                <div class="th1">
+                    What are Tokens in Java?
+                </div>
+                <div class="expla">
+                    It is a simplest or smallest unit of programming language. <br><br>
+                    Types of tokens are as follows <br>
+                    Separators <br>
+                    Keywords <br>
+                    Identifiers <br>
+                    Operators <br>
+                    Literals
+
+                </div>
+            </div>
+            <div class="Theory" onclick="openfull1(6,5)" id="Java6">
+                <div class="visited">
+                    0
+                </div>
+                <div class="subhead">
+                    <i class="fa fa-heartbeat" aria-hidden="true"></i>
+                    <span class="subheadsco">Score Boost 0/5</span>
+                </div>
+                <div class="th1">
+                    What is Keyword?
+                </div>
+                <div class="expla">
+                    1. It is predefined words in java. <br>
+                    2. Programmer cannot change the meaning of the keywords. <br>
+                    3. All the keywords are written in lowercase. <br>
+                    4. There are 52 keywords in java. <br>
+
+                </div>
+            </div>
+            <div class="Theory" onclick="openfull1(7,5)" id="Java7">
+                <div class="visited">
+                    0
+                </div>
+                <div class="subhead">
+                    <i class="fa fa-heartbeat" aria-hidden="true"></i>
+                    <span class="subheadsco">Score Boost 0/5</span>
+                </div>
+                <div class="th1">
+                    What is Identifier?
+                </div>
+                <div class="expla">
+                    It is the name given to the components of java. <br>
+                    For example the names that we give to variables , classes , methods. <br>
+                </div>
+            </div>
+            <div class="Theory" onclick="openfull1(8,5)" id="Java8">
+                <div class="visited">
+                    0
+                </div>
+                <div class="subhead">
+                    <i class="fa fa-heartbeat" aria-hidden="true"></i>
+                    <span class="subheadsco">Score Boost 0/5</span>
+                </div>
+                <div class="th1">
+                    What are the components of Java?
+                </div>
+                <div class="expla">
+                    1. Class <br>
+                    2. Methods <br>
+                    3. Variables <br>
+                    4. Interface <br>
+                    5. Enum. <br>
+
+                </div>
+            </div>
+            <div class="Theory" onclick="openfull1(9,5)" id="Java9">
+                <div class="visited">
+                    0
+                </div>
+                <div class="subhead">
+                    <i class="fa fa-heartbeat" aria-hidden="true"></i>
+                    <span class="subheadsco">Score Boost 0/5</span>
+                </div>
+                <div class="th1">
+                    Initializer or Blocks?
+                </div>
+                <div class="expla">
+                    1. It is used to execute start-up instructions of java program. <br> 2. There are two types of
+                    initializers: <br>
+                    &nbsp; &nbsp; a. Single line initializer <br>
+                    &nbsp; &nbsp; b. Multi line initializer
+
+                </div>
+            </div>
+            <div class="Theory" onclick="openfull1(10,5)" id="Java10">
+                <div class="visited">
+                    0
+                </div>
+                <div class="subhead">
+                    <i class="fa fa-heartbeat" aria-hidden="true"></i>
+                    <span class="subheadsco">Score Boost 0/5</span>
+                </div>
+                <div class="th1">
+                    Variables in Java?
+                </div>
+                <div class="expla">
+                    It is a container to store data or values. <br><br>
+                    Types of variables in java: <br>
+                    &nbsp; &nbsp; a. Global variable [The variable declared in class block] <br>
+                    &nbsp; &nbsp; b. Local variables [Variable declared inside method body]<br> <br>
+
+
+                </div>
+            </div>
+            <div class="Theory" onclick="openfull1(11,5)" id="Java11">
+                <div class="visited">
+                    0
+                </div>
+                <div class="subhead">
+                    <i class="fa fa-heartbeat" aria-hidden="true"></i>
+                    <span class="subheadsco">Score Boost 0/5</span>
+                </div>
+                <div class="th1">
+                    What is global variable.
+                </div>
+                <div class="expla">
+                     In the global variable we have two types: <br>
+                      &nbsp; &nbsp; Static variable and non-static variable <br> <br>
+
+                    Static variable: <br>
+                    &nbsp; &nbsp; It is a variable declared in the class block and prefixed with static keyword. <br>
+                    &nbsp; &nbsp; It is stored in class static area <br> <br>
+
+                    Non static variable: <br>
+                    &nbsp; &nbsp; It is a variable declared in the class block and not prefixed with static keyword. <br>
+                    &nbsp; &nbsp; It is stored in object of heap area.
+                </div>
             </div>
         </div>
-        <div class="Theory">
-            <div class="head">
-                Theory 1.2
+        <div class="" id="scoreboard">
+            <div class="scorhead">Your Current Score</div>
+            <div id="javascore">
+                0/200
             </div>
-            <div class="th1">
-
+            <br>
+            <div>
+                No of Questions Solved
             </div>
-            <div class="expla">
-
+            <div id="javaq">
+                0/10
             </div>
         </div>
     </div>
 
-
-    <div class="L" id="L0">
-        <div class="Theory">
-            <div class="head">
-                Theory 1.3
-            </div>
-            <div class="th1">
-                What is Programming Language?
-            </div>
-            <div class="expla">
-                As we know, to communicate with a person, we need a specific language, similarly to communicate with
-                computers, programmers also need a language is called Programming language.
-            </div>
-        </div>
-        <div class="Theory">
-            <div class="head">
-                Code 1.2
-            </div>
-            <div class="th1">
-
-            </div>
-            <div class="code">
-                class HelloWorld{
-                    public static void main(String[] args){
-                        System.out.println("Hellow World");
-                    }
-                }
-            </div>
-        </div>
-    </div>
-    <!-- Footer -->
+    <!-- Footer Element -->
     <div class="foot">
         <div class="footitem" id="foot1">
             <i class="fa fa-facebook-official" aria-hidden="true"></i>
@@ -115,6 +289,7 @@
         </div>
     </div>
 
+    <script src="./script.js"></script>
 </body>
 
 </html>

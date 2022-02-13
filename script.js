@@ -103,7 +103,7 @@ function openfull1(x , score) {
 }
 
 
-//Close function
+// Close function for login form
 function closelog() {
   document.getElementById("loginform").style = 'display:none';
   document.getElementById("anicont").style = 'display:block';

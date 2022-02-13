@@ -1,3 +1,5 @@
+/* This is for all those devices which has screen size abouve 1200px */
+
 @media (min-width: 1200px) {
   * {
     padding: 0%;
@@ -405,22 +407,6 @@
     margin-top: 120px;
   }
 
-  /* .glow {
-    color: #fff;
-    text-align: center;
-    -webkit-animation: glow 1s ease-in-out infinite alternate;
-    -moz-animation: glow 1s ease-in-out infinite alternate;
-    animation: glow 1s ease-in-out infinite alternate;
-  }
-  
-  @-webkit-keyframes glow {
-    from {
-      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
-    }
-    to {
-      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
-    }
-  } */
 
   .bodywork {
     display: flex;
@@ -476,18 +462,14 @@
   }
   .subhead {
     font-size: 30px;
-      
-    font-family: "Rubik", sans-serif;
   }
   .th1 {
     margin-top: 20px;
     color: #0072b1;
     font-size: 30px;
-    font-family: "Rubik", sans-serif;
   }
 
   .expla {
-    font-family: "Rubik", sans-serif;
     font-size: 20px;
   }
   .code {
